@@ -157,7 +157,7 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 800px; }
+    height: 700px; }
   .logo-container {
     width: 50%;
     display: -webkit-box;
