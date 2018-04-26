@@ -1,0 +1,41 @@
+@media screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 800px;
+  }
+  .logo-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form {
+    width: 50%;
+    align-items: flex-start;
+  }
+	.article {
+		width: 33.3%;
+	}
+	.container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+}
+@media screen and (min-width: 1000px) {
+  .article {
+    width: 25%;
+  }
+  .logo-container {
+    width: 20%;
+    padding-left: 50px;
+    transition: padding-left 0.5s linear 0.5s;
+  }
+  .form {
+    width: 80%;
+  }
+  footer {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+}

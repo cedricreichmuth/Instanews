@@ -52,8 +52,9 @@ table {
 header {
   display: flex;
   align-items: center;
+	justify-content: center;
   flex-direction: column;
-  border: 40px solid black;
+	height: 500px;
 }
 .form {
   display: flex;
@@ -62,16 +63,61 @@ header {
   width: 100%;
   color: white;
 }
-p {
-  margin: 20px 0px;
+.form p {
+  margin: 15px 0px;
+	font-size: 12px;
   font-family: "Open Sans";
   font-weight: 300;
   font-style: normal;
 }
-select {
+.sectionDropdown {
   background-color: white;
-  color: initial;
+	height: 20px;
+	outline: none;
+	padding-bottom: 2px;
+}
+/*container*/
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.article {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+	height: 400px;
+}
+.article p {
+background-color: rgba(0, 0, 0, 0.5);
+padding: 8px;
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 300;
+width: 100%;
+}
+a {
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+footer {
+	display: flex;
+	color: white;
+	font-size: 14px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 300;
+	color: #c2c2c2;
+	width: 100%;
+	justify-content: center;
+	padding: 20px 0px;
 }
 body {
   background-color: black;
 }
+
+@import 'queries.scss';
