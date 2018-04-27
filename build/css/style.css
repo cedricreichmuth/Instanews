@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -79,16 +80,18 @@ header {
 
 .form p {
   margin: 15px 0px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Open Sans";
   font-weight: 300;
   font-style: normal; }
 
 .sectionDropdown {
-  background-color: white;
-  height: 20px;
+  background: white;
+  height: 25px;
+  width: 100px;
   outline: none;
-  padding-bottom: 2px; }
+  padding-bottom: 2px;
+  border: 1px solid white; }
 
 /*container*/
 .container {
@@ -101,10 +104,7 @@ header {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+          align-items: center; }
 
 .article {
   background-size: cover;
@@ -120,6 +120,15 @@ header {
   font-weight: 300;
   width: 100%;
   color: white; }
+
+.loadingGifContainer  {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .loadingGif {
   height: 100px;

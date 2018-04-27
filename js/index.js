@@ -30,13 +30,14 @@ $(function() {
           var abstract = value.abstract;
             $(".container").append('<div class="article" style="background-image: url(' + img + ')"><a href="' + link + '" target ="_blank"><p>' + abstract + '</p></a></div>')
         } else {
-            $(".container").append('<div class="noImage" style="background-image: url(' + img + ')"><a href="' + link + '" target ="_blank"><p>' + abstract + '</p></a></div>')
+            $(".container").append('<div class="noImage" style="background-image: url(' + img + ')"><a href="' + link + '" target ="_blank"><p>' + abstract + '</p></a></div>');
             $(".noImage").css("display", "none");
         }
         return key < 11;
         });
-      })
-    }).fail(function() {
-      alert("Loading error, you can not view the stories")
-    });
+      }).fail(function(err) {
+            alert("Loading error, you can not view the stories")
+          });
+    })
+
   });
