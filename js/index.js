@@ -10,6 +10,8 @@ $(function() {
         $(".logo-container").css({"width": "10%", "justify-content": "flex-start", "padding-left": "20px", "transition": "padding-left 0.5s linear 0.5s"});
         $(".form").css("width", "90%");
     } else {}
+    $(".container").empty();
+    $(".container").append('<div class="loadingGifContainer"><img class="loadingGif" src="assets/images/ajax-loader.gif" alt="loading"></div>');
     var sections = $("select[name=selector]").val();
     var url = "https://api.nytimes.com/svc/topstories/v2/" + sections + ".json";
     url += '?' + $.param({
@@ -18,7 +20,8 @@ $(function() {
   $.ajax({
     url: url,
     method: 'GET',
-  }).done(function(data) {
+  })
+    .done(function(data) {
       $(".container").empty();
       $.each(data.results, function(key, value){
         if(value.multimedia.length >= 1) {
@@ -31,9 +34,9 @@ $(function() {
             $(".noImage").css("display", "none");
         }
         return key < 11;
+        });
       })
-    }).fail(function(err) {
-      throw err;
+    }).fail(function() {
+      alert("Loading error, you can not view the stories")
     });
-  })
-});
+  });

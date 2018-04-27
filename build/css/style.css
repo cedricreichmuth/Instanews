@@ -101,7 +101,10 @@ header {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .article {
   background-size: cover;
@@ -115,7 +118,12 @@ header {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  width: 100%; }
+  width: 100%;
+  color: white; }
+
+.loadingGif {
+  height: 100px;
+  width: 100px; }
 
 a {
   text-decoration: none;
@@ -184,7 +192,7 @@ body {
         -ms-flex-align: start;
             align-items: flex-start; } }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1025px) {
   .article {
     width: 25%; }
   .logo-container {
