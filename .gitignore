@@ -5,3 +5,5 @@ instanews-mobile-photos.png
 instanews-tablet-initial.png
 instanews-tablet-photos.png
 node_modules
+assets/.DS_Store
+js/.DS_Store
