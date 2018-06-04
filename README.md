@@ -10,9 +10,9 @@ The page is responsive and was coded with a mobile-first approach.
 
 ## Built With
 
-HTML5
-CSS3
-JavaScript/jQuery
+* HTML5
+* CSS3
+* JavaScript/jQuery
 
 ## Screenshots
 
